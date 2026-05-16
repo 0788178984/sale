@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: asmart-landing
+    env: static
+    buildCommand: echo "No build needed"
+    staticPublishPath: .
+    envVars:
+      - key: NODE_VERSION
+        value: 18

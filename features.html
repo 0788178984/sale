@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | SuperMKT Uganda</title>
+    <meta name="description" content="POS, inventory, mobile money, reports and more for Ugandan supermarkets.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="features">
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <header class="site-header" id="nav">
+        <div class="wrap header-inner">
+            <a href="index.html" class="brand"><span class="brand-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18l-2 13H5L3 6z" stroke="currentColor" stroke-width="2"/><path d="M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="2"/></svg></span>Super<span class="brand-accent">MKT</span></a>
+            <nav class="page-tabs" aria-label="Pages">
+                <a href="index.html" class="page-tab" data-page="home">Home</a>
+                <a href="features.html" class="page-tab" data-page="features">Features</a>
+                <a href="tracking.html" class="page-tab" data-page="tracking">Tracking</a>
+                <a href="pricing.html" class="page-tab" data-page="pricing">Pricing</a>
+                <a href="contact.html" class="page-tab" data-page="contact">Contact</a>
+            </nav>
+            <button class="btn btn-gold btn-sm header-cta" data-open-modal="demo">Book Demo</button>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="page-hero"><div class="wrap"><span class="tag">Features</span><h1>Everything Your Supermarket Needs</h1><p>From checkout to closing books — one system replaces notebooks and guesswork.</p></div></section>
+        <section class="section features-section page-section">
+            <div class="wrap">
+                <div class="bento reveal">
+                    <article class="bento-card bento-lg" data-tilt><div class="bento-glow"></div><span class="bento-num">01</span><h3>Point of Sale</h3><p>Barcode scanning, discounts, split payments, and instant thermal receipts.</p><div class="bento-visual pos-visual"><div class="pos-line"></div><div class="pos-line short"></div><div class="pos-total">UGX 45,000</div></div></article>
+                    <article class="bento-card" data-tilt><span class="bento-num">02</span><h3>Inventory Tracking</h3><p>Real-time stock, expiry alerts, and supplier records.</p></article>
+                    <article class="bento-card" data-tilt><span class="bento-num">03</span><h3>Mobile Money</h3><p>MTN MoMo and Airtel Money with instant confirmation.</p></article>
+                    <article class="bento-card bento-wide" data-tilt><span class="bento-num">04</span><h3>Reports &amp; Analytics</h3><p>Daily sales, P&amp;L, best sellers, and cashier performance.</p></article>
+                    <article class="bento-card" data-tilt><span class="bento-num">05</span><h3>Staff Management</h3><p>Admin, Manager and Cashier roles with PIN security.</p></article>
+                    <article class="bento-card" data-tilt><span class="bento-num">06</span><h3>Customer Loyalty</h3><p>Points, history, and SMS/WhatsApp promotions.</p></article>
+                </div>
+                <p class="page-nav-hint reveal"><a href="tracking.html" class="btn btn-glass">Next: Business Tracking &rarr;</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><div class="wrap footer-grid"><div class="footer-brand"><a href="index.html" class="brand">Super<span class="brand-accent">MKT</span></a><p>Uganda's supermarket management system.</p></div><div class="footer-col"><h4>Pages</h4><a href="features.html">Features</a><a href="tracking.html">Tracking</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div></div><div class="wrap footer-bottom"><p>&copy; 2026 SuperMKT Uganda</p></div></footer>
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true"><button class="modal-close" id="modalClose" aria-label="Close">&times;</button><div class="modal-header"><span class="tag">Free Demo</span><h2>Book Your Free Demo</h2></div><form id="demoForm" class="modal-form"><div class="form-grid"><div class="field"><label for="demoName">Name</label><input type="text" id="demoName" required></div><div class="field"><label for="demoPhone">Phone</label><input type="tel" id="demoPhone" required></div></div><div class="field"><label for="demoCity">City</label><input type="text" id="demoCity" required></div><div class="field"><label for="demoPlan">Plan</label><select id="demoPlan"><option value="Starter">Starter 80K</option><option value="Professional" selected>Professional 120K</option><option value="Enterprise">Enterprise 150K</option></select></div><div class="field"><label for="demoMsg">Message</label><textarea id="demoMsg" rows="3"></textarea></div><button type="submit" class="btn btn-gold btn-block btn-lg">Send via WhatsApp</button></form></div></div>
+    <script src="script.js"></script>
+</body>
+</html>

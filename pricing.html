@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | SuperMKT Uganda</title>
+    <meta name="description" content="Plans from UGX 80K per month.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="pricing">
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <header class="site-header" id="nav">
+        <div class="wrap header-inner">
+            <a href="index.html" class="brand"><span class="brand-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18l-2 13H5L3 6z" stroke="currentColor" stroke-width="2"/><path d="M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="2"/></svg></span>Super<span class="brand-accent">MKT</span></a>
+            <nav class="page-tabs" aria-label="Pages">
+                <a href="index.html" class="page-tab" data-page="home">Home</a>
+                <a href="features.html" class="page-tab" data-page="pricing">Features</a>
+                <a href="tracking.html" class="page-tab" data-page="tracking">Tracking</a>
+                <a href="pricing.html" class="page-tab" data-page="pricing">Pricing</a>
+                <a href="contact.html" class="page-tab" data-page="contact">Contact</a>
+            </nav>
+            <button class="btn btn-gold btn-sm header-cta" data-open-modal="demo">Book Demo</button>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="page-hero"><div class="wrap"><span class="tag">Pricing</span><h1>Simple, Affordable Plans</h1><p>Transparent UGX pricing. No hidden fees.</p></div></section>
+        <section class="section pricing-section page-section"><div class="wrap">
+            <div class="pricing-cards reveal">
+                <article class="price-card"><h3>Starter</h3><div class="price"><span class="price-cur">UGX</span><span class="price-amt">80K</span><span class="price-per">/mo</span></div><p class="price-desc">Single-shop mini supermarkets</p><ul><li>1 POS terminal</li><li>Up to 1,000 products</li><li>Inventory and reports</li><li>MTN and Airtel MoMo</li><li>Offline mode</li></ul><button class="btn btn-outline btn-block" data-open-modal="demo" data-plan="Starter">Get Started</button></article>
+                <article class="price-card featured"><span class="price-badge">Most Popular</span><h3>Professional</h3><div class="price"><span class="price-cur">UGX</span><span class="price-amt">120K</span><span class="price-per">/mo</span></div><p class="price-desc">Growing supermarkets</p><ul><li>3 POS terminals</li><li>Up to 5,000 products</li><li>Advanced analytics</li><li>SMS and WhatsApp</li><li>Loyalty program</li></ul><button class="btn btn-gold btn-block" data-open-modal="demo" data-plan="Professional">Get Started</button></article>
+                <article class="price-card"><h3>Enterprise</h3><div class="price"><span class="price-cur">UGX</span><span class="price-amt">150K</span><span class="price-per">/mo</span></div><p class="price-desc">Multi-branch and wholesale</p><ul><li>Unlimited POS</li><li>Unlimited products</li><li>Multi-store dashboard</li><li>On-site training</li><li>24/7 phone support</li></ul><button class="btn btn-outline btn-block" data-open-modal="demo" data-plan="Enterprise">Contact Sales</button></article>
+            </div>
+            <p class="page-nav-hint reveal"><a href="contact.html" class="btn btn-glass">Next: Contact and FAQ &rarr;</a></p>
+        </div></section></main>
+    <footer class="footer"><div class="wrap footer-grid"><div class="footer-brand"><a href="index.html" class="brand">Super<span class="brand-accent">MKT</span></a><p>Uganda's supermarket management system.</p></div><div class="footer-col"><h4>Pages</h4><a href="features.html">Features</a><a href="tracking.html">Tracking</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div></div><div class="wrap footer-bottom"><p>&copy; 2026 SuperMKT Uganda</p></div></footer>
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true"><button class="modal-close" id="modalClose" aria-label="Close">&times;</button><div class="modal-header"><span class="tag">Free Demo</span><h2>Book Your Free Demo</h2></div><form id="demoForm" class="modal-form"><div class="form-grid"><div class="field"><label for="demoName">Name</label><input type="text" id="demoName" required></div><div class="field"><label for="demoPhone">Phone</label><input type="tel" id="demoPhone" required></div></div><div class="field"><label for="demoCity">City</label><input type="text" id="demoCity" required></div><div class="field"><label for="demoPlan">Plan</label><select id="demoPlan"><option value="Starter">Starter 80K</option><option value="Professional" selected>Professional 120K</option><option value="Enterprise">Enterprise 150K</option></select></div><div class="field"><label for="demoMsg">Message</label><textarea id="demoMsg" rows="3"></textarea></div><button type="submit" class="btn btn-gold btn-block btn-lg">Send via WhatsApp</button></form></div></div>
+    <script src="script.js"></script>
+</body>
+</html>
